@@ -1,0 +1,24 @@
+name: dngaussian
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit-dev=11.3
+  - plyfile=0.8.1
+  - python=3.7.13
+  - pip=22.3.1
+  - pytorch=1.12.1
+  - torchaudio=0.12.1
+  - torchvision=0.13.1
+  - tqdm
+  - mkl=2024.0
+  - pip:
+      - ./gridencoder
+      - pillow
+      - tensorboard
+      - opencv-python
+      # - timm==0.9.10 --no-deps (this has to be ran manually since conda does not support options like --no-deps)
+      - scikit-image
+      - imageio
+      - matplotlib
