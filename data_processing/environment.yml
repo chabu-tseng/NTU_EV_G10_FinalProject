@@ -1,0 +1,14 @@
+name: data_processing
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.4
+  - pip
+  - pytorch>=2.5.1
+  - torchvision>=0.20.1
+  - pip:
+    - opencv-python
+    - open3d
+    - supervision
